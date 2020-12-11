@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:id="@+id/rl_sec"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#f00">
+
+        <Button
+            android:id="@+id/btn_sec_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="放大" />
+
+        <Button
+            android:id="@+id/btn_sec_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="缩小" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/ll"
+        android:background="#ff0">
+
+        <Button
+            android:text="我挡住你呗"
+            android:id="@+id/btn_sec_mid"
+            android:layout_width="120dp"
+            android:layout_height="90dp"/>
+
+        <com.example.newtest.widget.OrderFrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dfd" />
+
+    </FrameLayout>
+
+
+    <com.example.newtest.widget.FeedViewLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_bottom"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="#0f0">
+
+        <TextView
+            android:text="我在哪儿了"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </com.example.newtest.widget.FeedViewLayout>
+
+</RelativeLayout>

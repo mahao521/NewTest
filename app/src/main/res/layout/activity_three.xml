@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.newtest.widget.MyRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThreeActivity">
+
+    <com.example.newtest.widget.round.RoundImageView
+        android:id="@+id/iv_three_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints">
+
+    </com.example.newtest.widget.round.RoundImageView>
+
+    <com.example.newtest.widget.round.XfModeRoundImage
+        android:id="@+id/iv_three_photo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+</com.example.newtest.widget.MyRelativeLayout>

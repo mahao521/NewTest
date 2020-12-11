@@ -1,0 +1,1 @@
+1 : 自定义view的时候，子view设置wrap_content和设置match_parent没有区别。
