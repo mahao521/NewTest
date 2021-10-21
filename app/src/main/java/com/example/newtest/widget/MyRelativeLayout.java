@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-public class MyRelativeLayout  extends LinearLayout {
+public class MyRelativeLayout  extends RelativeLayout {
 
     private static final String TAG = "MyRelativeLayout";
 

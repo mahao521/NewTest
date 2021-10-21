@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D495F">
+
+    <androidx.slidingpanelayout.widget.SlidingPaneLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/slide_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layoutDirection="ltr"
+        tools:context=".share.SlidePanelLayoutActivity">
+
+        <FrameLayout
+            android:id="@+id/main_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF5722"
+            android:layoutDirection="ltr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是左边内容" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/main_content"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.67"
+            android:background="#0f0"
+            android:layoutDirection="ltr">
+
+            <TextView
+                android:id="@+id/tv_content_center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是内容哦" />
+
+
+        </FrameLayout>
+
+    </androidx.slidingpanelayout.widget.SlidingPaneLayout>
+
+</FrameLayout>
